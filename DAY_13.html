@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Change the website color</title>
+        <script>
+            function demoDark(){
+                document.body.style.backgroundColor="black";
+            }
+            function demoDarkId(){
+                document.getElementById("d1").style.backgroundColor="blue";
+            }
+            function demoDarkIdDi(){
+                document.getElementById("d1").style.backgroundColor=document.getElementById("pik1").value;
+            }
+            function demoDarkIdd(){
+                document.body.style.backgroundColor=document.getElementById("pik2").value;
+
+            }
+            function demoPrompt(){
+                document.body.style.backgroundColor=prompt("Enter the name of colour");
+
+            }
+            function demoPromptId(){
+                document.getElementById("d1").style.backgroundColor=prompt("Enter the name of colour");
+
+            }
+            
+            </script>
+        <style>
+            #d1{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <button value="hi" onclick="demoDark()">helloooo.....</button>
+        <div id="d1" style="height: 500px; width: 500px;">
+            hdioehfiubweiufh<br>
+            adlfnmjwnef<br>
+            aekjfbhwef<br>
+            aeufbkhubqef<br>
+            adkfgiWEGF<br>
+        </div>
+        <button onclick="demoDarkId()">hellooooo....</button>
+        <button onclick="demoPrompt()">hellooooo....</button>
+        <button onclick="demoPromptId()">hellooooo....</button>
+        <input type="color" id="pik1" onchange="demoDarkIdDi()">
+        <input type="color" id="pik2" onchange="demoDarkIdd()">
+    </body>
+</html>
